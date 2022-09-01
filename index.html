@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Encriptador Oracle Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="img">
+            <img src="img/logo.png" alt="Logo Alura letra a">
+        </div>
+    </header>
+    <main class="contenedor">
+        <section class="input">
+            <textarea cols="60" rows="30" class="input-text" id="texto" required placeholder="Ingrese texto a encriptar aquí" autofocus></textarea> 
+            <div class="orden">
+                <p class="atencion"><img src="img/atencion.png" alt="Prestar atención"> Ingresar sólo en minuscula, sin acentos y sin caracteres especiales.</p>
+            </div>
+             <div class="buttons">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        
+
+
+        <section class="output">
+         
+            <textarea cols="40" rows="20" class="mensaje" readonly></textarea>
+            
+            
+            <div class="div-copiar">
+                <button class="copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+        
+        <p class="copyright">&copyCopyright Encriptador Alura 2022</p>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
